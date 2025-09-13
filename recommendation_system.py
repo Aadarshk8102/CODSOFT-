@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import random
 
 # Sample dataset with job titles, categories, and skills
-data = {
+jobs = {
     'title': [
         'Drone Director',
         'Computer Magician',
@@ -44,7 +44,7 @@ data = {
     ]
 }
 
-df = pd.DataFrame(data)
+df = pd.DataFrame(jobs)
 
 # TF-IDF Vectorizer for skills
 tfidf = TfidfVectorizer()
